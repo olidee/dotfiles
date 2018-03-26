@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ln -sv ~/dotfiles/.Xresources ~
 ln -sv ~/dotfiles/.spacemacs ~
 ln -sv ~/dotfiles/.xinitrc ~
