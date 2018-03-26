@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ln -sv ~/dotfiles/.Xresources ~
-ln -sv ~/dotfiles/.spacemacs ~
-ln -sv ~/dotfiles/.xinitrc ~
-ln -sv ~/dotfiles/.xprofile ~
+ln -sfv ~/dotfiles/.Xresources ~
+ln -sfv ~/dotfiles/.spacemacs ~
+ln -sfv ~/dotfiles/.xinitrc ~
+ln -sfv ~/dotfiles/.xprofile ~
 
 ln -sfv ~/dotfiles/.config/bspwm/  ~/.config
 ln -sfv ~/dotfiles/.config/sxhkd/  ~/.config
