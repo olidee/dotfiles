@@ -1,0 +1,24 @@
+#!/bin/sh
+
+export XDG_CONFIG_HOME="$HOME/.config"
+
+xrandr --output DP1 --primary --right-of eDP1 &
+
+xinput set-prop 10 'libinput Accel Speed' 0.3 &
+
+xinput map-to-output 14 eDP-1 &
+
+xset r rate 200 35 &
+xset s 300 900 &
+
+setxkbmap -option caps:escape &
+
+xrdb ~/.Xresources &
+
+unclutter &
+numlockx &
+
+xss-lock -- slock &
+
+emacs --daemon &
+slack &

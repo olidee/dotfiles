@@ -1,0 +1,33 @@
+#! /bin/sh
+
+feh --bg-scale ~/bg/moebius.png
+
+compton &
+
+sxhkd &
+
+polybar oli &
+polybar oli2 &
+
+bspc monitor eDP1 -d x
+bspc monitor DP1 -d w e
+
+bspc desktop x --layout monocle
+
+bspc config border_width         2
+bspc config window_gap           8
+
+bspc config split_ratio          0.52
+bspc config focus_follows_pointer true
+
+bspc config initial_polarity second_child
+
+bspc rule -a Chromium desktop=w
+bspc rule -a Emacs desktop=e
+
+bspc rule -a URxvt desktop=x
+bspc rule -a Slack desktop=x
+
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
