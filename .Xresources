@@ -49,7 +49,7 @@ URxvt.letterSpace:	-2
 URxvt*urlLauncher:         firefox
 URxvt*scrollBar:        false
 urxvt*depth: 32
-urxvt*background: rgba:0000/0000/0200/c800
+urxvt*.background: [95]#272822
 
 
 ! ------------------------------------------------------------------------------
