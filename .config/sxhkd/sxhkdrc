@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-  urxvt -e tmux attach-session -t x | tmux new-session -s x -d; tmux attach-session -t x
+  urxvt -e tmux attach-session -t x || tmux new-session -s x -d; tmux attach-session -t x
 
 # program launcher
 super + space; space
@@ -83,6 +83,10 @@ super + {o,i}
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# send to x desktop
+super + x
+  bspc node -d 'x'
 
 super + d ; {a-z}
 	bspc desktop -f '{a-z}'
