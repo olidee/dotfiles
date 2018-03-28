@@ -58,7 +58,7 @@ urxvt*.background: [95]nord0
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #393939, #393939, #268bd2
-rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
-rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
-rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
+rofi.color-window: nord0, nord0, nord10
+rofi.color-normal: nord0, nord4, nord0, nord10, nord4
+rofi.color-active: nord0, nord10, nord0, nord10, #205171
+rofi.color-urgent: nord0, nord12, nord0, nord10, nord13
