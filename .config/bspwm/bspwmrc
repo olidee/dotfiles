@@ -25,6 +25,7 @@ bspc rule -a Emacs desktop=e
 
 bspc rule -a URxvt desktop=x
 bspc rule -a Slack desktop=x
+bspc rule -a Spotify desktop=x
 
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
