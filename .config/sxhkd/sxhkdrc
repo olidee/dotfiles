@@ -84,9 +84,10 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-# send to x desktop
+# send to x desktop and focus
 super + x
-  bspc node -d 'x'
+  bspc node -d 'x'; \
+  bspc node older -f
 
 super + d ; {a-z}
 	bspc desktop -f '{a-z}'
@@ -129,7 +130,7 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 super + space; {b,e}
-  {chromium, emacsclient -c}
+  {chromium, emacsclient -c -n --alternate-editor=""}
 
 super + shift + semicolon
   slock
