@@ -14,11 +14,3 @@ xset s 300 900 &
 setxkbmap -option caps:escape &
 
 xrdb ~/.Xresources &
-
-unclutter &
-numlockx &
-
-xss-lock -- slock &
-
-emacs --daemon &
-slack &
